@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b22c8e6bd8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/ventors/css/grid.css">
+    <script type="text/javascript" src="/script.js"></script>
+    <script type="text/javascript" src="/main.js" defer></script>
+
+    <title>Kids Clothing Store</title>
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <div class="header-first">
+            <p class="p-first">
+                Get 10% Off - Use Coupon Code HAPPY123
+            </p>
+        </div>
+        <div class="header-logo">
+            <a href="index.html">
+                <h1>HAPPY KIDS</h1>
+            </a>
+        </div>
+        <nav>
+            <div class="content-nav">
+                <ul>
+                    <li><a class="link" href="index.html">Home</a></li>
+                    <li class="dropdown"><a class="link" href="#">Shop Collection</a>
+                        <div class="dropdown-content">
+                            <a href="girl.html">Girl</a>
+                            <a href="boy.html">Boy</a>
+                        </div>
+                    </li>
+                    <li><a class="link" href="ourstory.html">Our Story</a></li>
+                    <li><a class="link" href="contact.html">Contact</a></li>
+                    <button id="cart">
+                        <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                    </button>
+                </ul>
+            </div>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cart</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Product</span>
+                            <span class="cart-price cart-header cart-column">Price</span>
+                            <span class="cart-quantity cart-header cart-column">Amount</span>
+                        </div>
+                        <div class="cart-items">
+
+                        </div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Total:</strong>
+                            <span class="cart-total-price">0&#36;</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Close</button>
+                        <button type="button" class="btn btn-primary order">Pay</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="small-menu">
+        <ul>
+            <li><a href="#">Home</a></li> |
+            <li><a href="#">Shop Collection</a></li> |
+            <li><a href="#">Girl</a></li>
+        </ul>
+    </div>
+    <section>
+        <div class="col span-1-of-2" style="width:20%; padding-left: 20px;">
+            <div class="categories">
+                <h3 style="margin-bottom: 30px;">CATEGORIES</h3>
+                <p class="p-content"><a href="#">Accessories</a></p>
+                <p class="p-content"><a href="#">Blue Jeans</a></p>
+                <p class="p-content"><a href="#">Cold Weather</a></p>
+                <p class="p-content"><a href="#">Doorbusters</a></p>
+                <p class="p-content"><a href="#">Dresses</a></p>
+                <p class="p-content"><a href="#">Glacier Fleece</a></p>
+                <p class="p-content"><a href="#">Graphic Tees</a></p>
+                <p class="p-content"><a href="#">Holiday Dress Up</a></p>
+                <p class="p-content"><a href="#">New Arrivals</a></p>
+                <p class="p-content"><a href="#">Outerwear</a></p>
+                <p class="p-content"><a href="#">Outfitting</a></p>
+                <p class="p-content"><a href="#">School Uniforms</a></p>
+                <p class="p-content"><a href="#">Sleepwear</a></p>
+                <p class="p-content"><a href="#">Up To 50% Off!</a></p>
+                <p class="p-content"><a href="#">World's Best Overalls</a></p>
+            </div>
+        </div>
+        <div class="shop col span-1-of-2" style="width: 70%;margin-left: 5%;">
+            <h3 style="margin-bottom: 30px;">Accessories</h3>
+            <div class="products">
+                <div class="col span-1-of-3" style="width:30%">
+                    <div class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd" src="/css/image/girl1.jpg">
+                        </div>
+                        <div class="content-product">
+                            <p class="view" id="quick-view1">Quick view</p>
+                            <h3 class="content-product-h3">Contrast Dress</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">20</span> &#36;
+                                </div>
+                                <button type="button" class="btn btn-cart">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="detail-product1" class="modal">
+                        <div class="modal-content1">
+                            <div class="modal-header1">
+                                <h5 class="modal-title1">Product Details</h5>
+                                <span class="close1">&times;</span>
+                            </div>
+                            <div class="modal-body1">
+                                <div class="col span-1-of-2">
+                                    <div class="img-product-detail">
+                                        <img class="img-prd" src="/css/image/girl1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col span-1-of-2">
+                                    <div class="content-product-detail">
+                                        <h3 class="content-product-h3">CONTRAST DRESS</h3>
+                                        <p class="p-content">
+                                            SKU: N/A<br>Tags: dress, girls, skirt, t-shirt
+                                        </p>
+                                        <div class="price">
+                                            <span class="money">20</span> &#36;
+                                        </div>
+                                        <p class="p-content">
+                                            All our clothes and footwear are designed with attention to detail and style
+                                            in mind to give your kid a cute head-to-toe look.
+                                        </p>
+                                        <div>
+                                            <p class="p-content" style="padding-bottom: 5px;">SIZE:</p>
+                                            <select name="size" id="">
+                                                <option value="">Choose an option</option>
+                                                <option value="">S</option>
+                                                <option value="">M</option>
+                                                <option value="">L</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <p class="p-content" style="padding-bottom: 5px;">COLOR:</p>
+                                            <select name="color" id="">
+                                                <option value="">Choose an option</option>
+                                                <option value="">Green</option>
+                                                <option value="">Red</option>
+                                                <option value="">White</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="btn btn-cart">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3" style="width:30%">
+                    <div class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd" src="/css/image/girl2.jpg">
+                        </div>
+                        <div class="content-product">
+                            <p class="view" id="quick-view2">Quick view</p>
+                            <h3 class="content-product-h3">Contrast Embroidered Top</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">28</span> &#36;
+                                </div>
+                                <button type="button" class="btn btn-cart">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="detail-product2" class="modal">
+                        <div class="modal-content1">
+                            <div class="modal-header1">
+                                <h5 class="modal-title1">Product Details</h5>
+                                <span class="close2">&times;</span>
+                            </div>
+                            <div class="modal-body1">
+                                <div class="col span-1-of-2">
+                                    <div class="img-product-detail">
+                                        <img class="img-prd" src="/css/image/girl2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col span-1-of-2">
+                                    <div class="content-product-detail">
+                                        <h3 class="content-product-h3">CONTRAST EMBROIDERED TOP</h3>
+                                        <p class="p-content">
+                                            SKU: N/A<br>Tags: boys, skirt, t-shirt
+                                        </p>
+                                        <div class="price">
+                                            <span class="money">28</span> &#36;
+                                        </div>
+                                        <p class="p-content">
+                                            All our clothes and footwear are designed with attention to detail and style
+                                            in mind to give your kid a cute head-to-toe look.
+                                        </p>
+                                        <div>
+                                            <p class="p-content" style="padding-bottom: 5px;">SIZE:</p>
+                                            <select name="size" id="">
+                                                <option value="">Choose an option</option>
+                                                <option value="">S</option>
+                                                <option value="">M</option>
+                                                <option value="">L</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <p class="p-content" style="padding-bottom: 5px;">COLOR:</p>
+                                            <select name="color" id="">
+                                                <option value="">Choose an option</option>
+                                                <option value="">Blue</option>
+                                                <option value="">Brown</option>
+                                                <option value="">Gray</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="btn btn-cart">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3" style="width:30%">
+                    <div class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd" src="/css/image/girl7.jpg">
+                        </div>
+                        <div class="content-product">
+                            <p class="view" id="quick-view3">Quick view</p>
+                            <h3 class="content-product-h3">Double Breated Coat</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">29</span> &#36;
+                                </div>
+                                <button type="button" class="btn btn-cart">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="detail-product3" class="modal">
+                        <div class="modal-content1">
+                            <div class="modal-header1">
+                                <h5 class="modal-title1">Product Details</h5>
+                                <span class="close3">&times;</span>
+                            </div>
+                            <div class="modal-body1">
+                                <div class="col span-1-of-2">
+                                    <div class="img-product-detail">
+                                        <img class="img-prd" src="/css/image/girl7.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col span-1-of-2">
+                                    <div class="content-product-detail">
+                                        <h3 class="content-product-h3">DOUBLE BREASTED COAT</h3>
+                                        <p class="p-content">
+                                            SKU: N/A<br>Tags: boys, dress, t-shirt
+                                        </p>
+                                        <div class="price">
+                                            <span class="money">29</span> &#36;
+                                        </div>
+                                        <p class="p-content">
+                                            All our clothes and footwear are designed with attention to detail and style
+                                            in mind to give your kid a cute head-to-toe look.
+                                        </p>
+                                        <div>
+                                            <p class="p-content" style="padding-bottom: 5px;">SIZE:</p>
+                                            <select name="size" id="">
+                                                <option value="">Choose an option</option>
+                                                <option value="">S</option>
+                                                <option value="">M</option>
+                                                <option value="">L</option>
+                                                <option value="">XL</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="btn btn-cart">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products">
+                    <div class="col span-1-of-4" style="width:30%">
+                        <div class="main-product">
+                            <div class="img-product">
+                                <img class="img-prd" src="/css/image/girl3.jpg">
+                            </div>
+                            <div class="content-product">
+                                <p class="view" id="quick-view5">Quick view</p>
+                                <h3 class="content-product-h3">Embroidered shirt</h3>
+                                <div class="content-product-deltals">
+                                    <div class="price">
+                                        <span class="money">40</span> &#36;
+                                    </div>
+                                    <button type="button" class="btn btn-cart">Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div id="detail-product5" class="modal">
+                            <div class="modal-content1">
+                                <div class="modal-header1">
+                                    <h5 class="modal-title1">Product Details</h5>
+                                    <span class="close5">&times;</span>
+                                </div>
+                                <div class="modal-body1">
+                                    <div class="col span-1-of-2">
+                                        <div class="img-product-detail">
+                                            <img class="img-prd" src="/css/image/girl3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col span-1-of-2">
+                                        <div class="content-product-detail">
+                                            <h3 class="content-product-h3">EMBROIDERED SHIRT</h3>
+                                            <p class="p-content">
+                                                SKU: N/A<br>Tags: boys, dress, girls, skirt, t-shirt
+                                            </p>
+                                            <div class="price">
+                                                <span class="money">40</span> &#36;
+                                            </div>
+                                            <p class="p-content">
+                                                All our clothes and footwear are designed with attention to detail and style
+                                                in mind to give your kid a cute head-to-toe look.
+                                            </p>
+                                            <div>
+                                                <p class="p-content" style="padding-bottom: 5px;">COLOR:</p>
+                                                <select name="color" id="">
+                                                    <option value="">Choose an option</option>
+                                                    <option value="">Green</option>
+                                                    <option value="">Red</option>
+                                                    <option value="">White</option>
+                                                </select>
+                                                <select name="size" id="">
+                                                    <option value="">Choose an option</option>
+                                                    <option value="">S</option>
+                                                    <option value="">M</option>
+                                                    <option value="">L</option>
+                                                </select>
+                                            </div>
+                                            <button type="button" class="btn btn-cart">Add To Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col span-1-of-4" style="width:30%">
+                        <div class="main-product">
+                            <div class="img-product">
+                                <img class="img-prd" src="/css/image/girl4.jpg">
+                            </div>
+                            <div class="content-product">
+                                <p class="view" id="quick-view6">Quick view</p>
+                                <h3 class="content-product-h3">Jacquard dress</h3>
+                                <div class="content-product-deltals">
+                                    <div class="price">
+                                        <span class="money">66</span> &#36;
+                                    </div>
+                                    <button type="button" class="btn btn-cart">Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div id="detail-product6" class="modal">
+                            <div class="modal-content1">
+                                <div class="modal-header1">
+                                    <h5 class="modal-title1">Product Details</h5>
+                                    <span class="close6">&times;</span>
+                                </div>
+                                <div class="modal-body1">
+                                    <div class="col span-1-of-2">
+                                        <div class="img-product-detail">
+                                            <img class="img-prd" src="/css/image/girl4.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col span-1-of-2">
+                                        <div class="content-product-detail">
+                                            <h3 class="content-product-h3">JACQUARD DRESS</h3>
+                                            <p class="p-content">
+                                                SKU: N/A<br>Tags: boys, dress, girls
+                                            </p>
+                                            <div class="price">
+                                                <span class="money">66</span> &#36;
+                                            </div>
+                                            <p class="p-content">
+                                                All our clothes and footwear are designed with attention to detail and style
+                                                in mind to give your kid a cute head-to-toe look.
+                                            </p>
+                                            <div>
+                                                <p class="p-content" style="padding-bottom: 5px;">SIZE:</p>
+                                                <select name="size" id="">
+                                                    <option value="">Choose an option</option>
+                                                    <option value="">S</option>
+                                                    <option value="">M</option>
+                                                    <option value="">L</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <p class="p-content" style="padding-bottom: 5px;">COLOR:</p>
+                                                <select name="color" id="">
+                                                    <option value="">Choose an option</option>
+                                                    <option value="">Black</option>
+                                                    <option value="">Blue</option>
+                                                    <option value="">Brown</option>
+                                                </select>
+                                            </div>
+                                            <button type="button" class="btn btn-cart">Add To Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col span-1-of-4" style="width:30%">
+                        <div class="main-product">
+                            <div class="img-product">
+                                <img class="img-prd" src="/css/image/girl5.jpg">
+                            </div>
+                            <div class="content-product">
+                                <p class="view" id="quick-view7">Quick view</p>
+                                <h3 class="content-product-h3">Magical Wand Sweatshirt</h3>
+                                <div class="content-product-deltals">
+                                    <div class="price">
+                                        <span class="money">54</span> &#36;
+                                    </div>
+                                    <button type="button" class="btn btn-cart">Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div id="detail-product7" class="modal">
+                            <div class="modal-content1">
+                                <div class="modal-header1">
+                                    <h5 class="modal-title1">Product Details</h5>
+                                    <span class="close7">&times;</span>
+                                </div>
+                                <div class="modal-body1">
+                                    <div class="col span-1-of-2">
+                                        <div class="img-product-detail">
+                                            <img class="img-prd" src="/css/image/boy6.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col span-1-of-2">
+                                        <div class="content-product-detail">
+                                            <h3 class="content-product-h3">MAGICAL WAND SWEATSHIRT</h3>
+                                            <p class="p-content">
+                                                SKU: N/A<br>Tags: ssweater
+                                            </p>
+                                            <div class="price">
+                                                <span class="money">54</span> &#36;
+                                            </div>
+                                            <p class="p-content">
+                                                All our clothes and footwear are designed with attention to detail and style
+                                                in mind to give your kid a cute head-to-toe look.
+                                            </p>
+                                            <div>
+                                                <p class="p-content" style="padding-bottom: 5px;">SIZE:</p>
+                                                <select name="size" id="">
+                                                    <option value="">Choose an option</option>
+                                                    <option value="">S</option>
+                                                    <option value="">M</option>
+                                                    <option value="">L</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <p class="p-content" style="padding-bottom: 5px;">COLOR:</p>
+                                                <select name="color" id="">
+                                                    <option value="">Choose an option</option>
+                                                    <option value="">Green</option>
+                                                    <option value="">Red</option>
+                                                    <option value="">White</option>
+                                                </select>
+                                            </div>
+                                            <button type="button" class="btn btn-cart">Add To Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+</body>
+
+</html>
