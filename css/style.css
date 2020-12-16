@@ -115,9 +115,10 @@ nav {
 .dropdown-content a{
     text-decoration: none;
     display: block;
-    padding: 10px 15px;
+    padding: 10px 15px 10px 20px;
     color: black;
     font-size: 14px;
+    text-align: left;
 }
 
 .dropdown-content a:hover{
@@ -208,7 +209,7 @@ nav {
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-top: 568px;
+    margin-top: 42.2%;
 }
 
 .navigation-auto div{
@@ -274,6 +275,25 @@ h4 {
     padding-bottom: 70px;
 }
 
+.heading-primary{
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 33%;
+  background-image: linear-gradient(to left, lightgrey, rgb(27, 27, 27));
+  color: transparent;
+  -webkit-background-clip: text;
+  transition: all .2s;
+}
+
+.heading-primary:hover{
+  transform: skewY(3deg) scale(1.1);
+  text-shadow: 5px 10px 15px rgba(180, 178, 178, 0.4);
+}
+
 /* -----product------ */
 
 .featured .col,
@@ -286,12 +306,14 @@ h4 {
 
  .featured .col:hover img,
  .shop .col:hover img{
-    transform: scale(1.08);
+    transform: scale(1.05);
 }
 
 .featured img,
 .shop img{
+    height: 365px;
     width: 100%;
+    border-radius: 3px;
     transition: all .3s;
 }
 
@@ -309,6 +331,7 @@ h4 {
 .shop .col:hover .view{
     transform: translate(-50%,50%);
     opacity: 1;
+    cursor: pointer;
 }
 
 .p-content {
@@ -323,16 +346,16 @@ h4 {
     color: black;
     background-color: white;
     padding: 10px 50px;
-    margin-left: 43%;
-    margin-top: 1000px;
+    /* margin-left: 43%;
+    margin-top: 50px; */
     border: 1px solid black;
+    margin-left: 42%;
 }
 
 .button-black:hover, .button-black:active {
     background-color: #282828;
     color: white;
 }
-
 
 
 /* ------------------------------------ */
@@ -483,6 +506,7 @@ h4 {
     margin: 15px 0;
     letter-spacing: 1px;
     color: black;
+    font-size: 16px;
 }
 
 .img-prd{
@@ -527,6 +551,7 @@ footer h4 {
     color: #282828;
 }
 
+
 footer ul {
     text-align: center;
     padding-top: 50px;
@@ -535,6 +560,7 @@ footer ul {
 footer ul li {
     list-style-type: none;
 }
+
 
 .icon {
     text-align: center;
@@ -639,26 +665,30 @@ footer ul li {
 
 }
 
-.form-contact input{
+.input-contact{
     padding-top: 10px;
     padding-bottom: 10px;  
     border: 0px ;
-    border-bottom: 1px solid #6d6b6b;
+    border-bottom: 0.5px solid #6d6b6b;
 }
 
 textarea{
     margin-top: 10px;
     margin-bottom: 50px;
     border: 0px ;
-    border-bottom: 1px solid #6d6b6b;
+    border-bottom: 0.5px solid #6d6b6b;
     resize: none;
 }
 
 .input-contact:hover,
 textarea:hover{
-    border-bottom: 3px solid black;
+    border-bottom: 1px solid black;
 }
 
+.input-contact:active,
+textarea:active{
+    border: 0px;
+}
 
 
 
@@ -796,5 +826,79 @@ textarea:hover{
 }
 
 
+/* ------------------------------------------------------- */
 
+.payment{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+}
 
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+    padding: 10px;
+  }
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  .container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border-radius: 3px;
+    border: 1px solid lightgrey;
+  }
+
+  .input-text{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .label-pay {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+.a-pay {
+    color: #2196F3;
+  }
+  
+  hr {
+    border: 1px solid lightgrey;
+  }
+  
+  .price-pay{
+    float: right;
+    color: grey;
+  }

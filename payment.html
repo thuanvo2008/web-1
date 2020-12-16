@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b22c8e6bd8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body style="background-color: #f7f5f5;">
+    <header>
+        <div class="header-first">
+            <p class="p-first">
+                Get 10% Off - Use Coupon Code HAPPY123
+            </p>
+        </div>
+        <div class="header-logo">
+            <a href="index.html">
+                <h1>HAPPY KIDS</h1>
+            </a>
+        </div>
+        <nav>
+            <div class="content-nav">
+                <ul>
+                    <li><i class="fas fa-user-circle"><a href="login.html"> Login</a></i></li>
+                    <li><a class="link" href="index.html">Home</a></li>
+                    <li class="dropdown"><a class="link" href="#">Girl</a>
+                        <div class="dropdown-content">
+                            <a href="/shirtgirl.html">Shirt</a>
+                            <a href="/pantgirl.html">Pant</a>
+                            <a href="/dress.html">Dress</a>
+                            <a href="/shoegirl.html">Shoes</a>
+                        </div>
+                    </li>
+                    <li class="dropdown"><a class="link" href="#">Boy</a>
+                        <div class="dropdown-content">
+                            <a href="/shirtboy.html">Shirt</a>
+                            <a href="/pantboy.html">Pant</a>
+                            <a href="/jacket.html">Jacket</a>
+                            <a href="/shoeboy.html">Shoes</a>
+                        </div>
+                    </li>
+                    <li><a class="link" href="ourstory.html">Our Story</a></li>
+                    <li><a class="link" href="contact.html">Contact</a></li>
+                    <button id="cart">
+                        <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                    </button>
+                </ul>
+            </div>
+
+            </div>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cart</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Product</span>
+                            <span class="cart-price cart-header cart-column">Price</span>
+                            <span class="cart-quantity cart-header cart-column">Amount</span>
+                        </div>
+                        <div class="cart-items">
+
+                        </div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Total:</strong>
+                            <span class="cart-total-price">0&#36;</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Close</button>
+                        <button type="button" class="btn btn-primary order">Pay</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="payment">
+        <div class="row">
+            <div class="col-75">
+                <div class="container">
+                    <form action="/index.html">
+
+                        <div class="row">
+                            <div class="col-50">
+                                <h3 style="padding-bottom: 20px;">Billing Address</h3>
+                                <label class="label-pay" for="fname"><i class="fa fa-user"></i> Full Name</label>
+                                <input class="input-text" type="text" id="fname" name="firstname"
+                                    placeholder="Dang Thi Kieu Tien">
+                                <label class="label-pay" for="email"><i class="fa fa-envelope"></i> Email</label>
+                                <input class="input-text" type="text" id="email" name="email"
+                                    placeholder="iamtien277@gmail.com">
+                                <label class="label-pay" for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                                <input class="input-text" type="text" id="adr" name="address"
+                                    placeholder="Ho Thi Ky Street">
+                                <label class="label-pay" for="city"><i class="fa fa-institution"></i> City</label>
+                                <input class="input-text" type="text" id="city" name="city" placeholder="Ho Chi Minh">
+
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label class="label-pay" for="state">State</label>
+                                        <input class="input-text" type="text" id="state" name="state" placeholder="NY">
+                                    </div>
+                                    <div class="col-50">
+                                        <label class="label-pay" for="zip">Zip</label>
+                                        <input class="input-text" type="text" id="zip" name="zip" placeholder="10001">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-50">
+                                <h3 style="padding-bottom: 20px;">Payment</h3>
+                                <label class="label-pay" for="fname">Accepted Cards</label>
+                                <div class="icon-container">
+                                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                                </div>
+                                <label class="label-pay" for="cname">Name on Card</label>
+                                <input class="input-text" type="text" id="cname" name="cardname"
+                                    placeholder="Dang Thi Kieu Tien">
+                                <label class="label-pay" for="ccnum">Credit card number</label>
+                                <input class="input-text" type="text" id="ccnum" name="cardnumber"
+                                    placeholder="1111-2222-3333-4444">
+                                <label class="label-pay" for="expmonth">Exp Month</label>
+                                <input class="input-text" type="text" id="expmonth" name="expmonth"
+                                    placeholder="September">
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label class="label-pay" for="expyear">Exp Year</label>
+                                        <input class="input-text" type="text" id="expyear" name="expyear"
+                                            placeholder="2018">
+                                    </div>
+                                    <div class="col-50">
+                                        <label class="label-pay" for="cvv">CVV</label>
+                                        <input class="input-text" type="text" id="cvv" name="cvv" placeholder="352">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <label class="label-pay">
+                            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                        </label>
+                        <input type="submit" value="Continue to checkout" class="btn" id="btn-pay">
+                    </form>
+                </div>
+            </div>
+            <div class="col-25">
+                <div class="container">
+                    <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span>
+                    </h4>
+                    <p><a class="a-pay" href="#">Product 1</a> <span class="price">$20</span></p>
+                    <p><a class="a-pay" href="#">Product 2</a> <span class="price">$34</span></p>
+                    <p><a class="a-pay" href="#">Product 3</a> <span class="price">$30</span></p>
+                    <hr>
+                    <p>Total <span class="price-pay" style="color:black"><b>$84</b></span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var button = document.getElementById("btn-pay");
+        button.onclick = function () {
+        alert("Thank you for your order payment");
+        
+        }
+    </script>
+</body>
+
+</html>

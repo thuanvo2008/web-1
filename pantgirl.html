@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b22c8e6bd8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/ventors/css/grid.css">
+    <script type="text/javascript" src="/script.js"></script>
+    <script type="text/javascript" src="/main.js" defer></script>
+    <script type="text/javascript" src="/login.js" defer></script>
+
+    <title>Kids Clothing Store</title>
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <div class="header-first">
+            <p class="p-first">
+                Get 10% Off - Use Coupon Code HAPPY123
+            </p>
+        </div>
+        <div class="header-logo">
+            <a href="index.html">
+                <h1>HAPPY KIDS</h1>
+            </a>
+        </div>
+        <nav>
+            <div class="content-nav">
+                <ul>
+                    <li><i class="fas fa-user-circle"><a href="login.html"> Login</a></i></li>
+                    <li><a class="link" href="index.html">Home</a></li>
+                    <li class="dropdown"><a class="link" href="#">Girl</a>
+                        <div class="dropdown-content">
+                            <a href="/shirtgirl.html">Shirt</a>
+                            <a href="/pantgirl.html">Pant</a>
+                            <a href="/dress.html">Dress</a>
+                            <a href="/shoegirl.html">Shoes</a>
+                        </div>
+                    </li>
+                    <li class="dropdown"><a class="link" href="#">Boy</a>
+                        <div class="dropdown-content">
+                            <a href="/shirtboy.html">Shirt</a>
+                            <a href="/pantboy.html">Pant</a>
+                            <a href="/jacket.html"></a>
+                            <a href="/shoeboy.html">Shoes</a>
+                        </div>
+                    </li>
+                    <li><a class="link" href="ourstory.html">Our Story</a></li>
+                    <li><a class="link" href="contact.html">Contact</a></li>
+                    <button id="cart">
+                        <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                    </button>
+                </ul>
+            </div>
+
+            </div>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cart</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Product</span>
+                            <span class="cart-price cart-header cart-column">Price</span>
+                            <span class="cart-quantity cart-header cart-column">Amount</span>
+                        </div>
+                        <div class="cart-items">
+
+                        </div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Total:</strong>
+                            <span class="cart-total-price">0&#36;</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Close</button>
+                        <button type="button" class="btn btn-primary order">Pay</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div>
+        <ul class="icon-scroll">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+        </ul>
+    </div>
+    <div class="small-menu">
+        <ul>
+            <li><a href="#">Home</a></li> |
+            <li><a href="#">Girl</a></li> |
+            <li><a href="#">Pant</a></li>
+        </ul>
+    </div>
+    <section>
+        <div class="featured">
+            <h4 class="heading-primary" style="margin-left:45%;">Pant</h4>
+            <div class="products">
+                <div class="col span-1-of-4">
+                    <div class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd" src="/css/image/girl/Animal Print Tulle Skirt.jpg">
+                        </div>
+                        <div class="content-product">
+                            <p class="view" id="quick-view1">Quick view</p>
+                            <h3 class="content-product-h3">Animal Print Tulle Skirt</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">20</span> &#36;
+                                </div>
+                                <button type="button" class="btn btn-cart">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd" src="/css/image/girl/Faux Leather Pleated Shorts.jpg">
+                        </div>
+                        <div class="content-product">
+                            <p class="view" id="quick-view2">Quick view</p>
+                            <h3 class="content-product-h3">Faux Leather Pleated Shorts</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">28</span> &#36;
+                                </div>
+                                <button type="button" class="btn btn-cart">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4">
+                <div class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd" src="/css/image/girl/Padded Bottoms With Suspenders.jpg">
+                    </div>
+                    <div class="content-product">
+                        <p class="view" id="quick-view3">Quick view</p>
+                        <h3 class="content-product-h3">Padded With Suspenders</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">29</span> &#36;
+                            </div>
+                            <button type="button" class="btn btn-cart">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4">
+                <div class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd" src="/css/image/girl/Frayed Shorts With Bow.jpg">
+                    </div>
+                    <div class="content-product">
+                        <p class="view" id="quick-view4">Quick view</p>
+                        <h3 class="content-product-h3">Frayed Shorts With Bow</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">20</span> &#36;
+                            </div>
+                            <button type="button" class="btn btn-cart">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="col span-1-of-4">
+                    <div class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd" src="/css/image/girl/Culotte Jeans With Buttons.jpg">
+                        </div>
+                        <div class="content-product">
+                            <p class="view" id="quick-view1">Quick view</p>
+                            <h3 class="content-product-h3">Culotte Jeans With Buttons</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">20</span> &#36;
+                                </div>
+                                <button type="button" class="btn btn-cart">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd" src="/css/image/girl/Ruffled Suspender Jeans.jpg">
+                        </div>
+                        <div class="content-product">
+                            <p class="view" id="quick-view2">Quick view</p>
+                            <h3 class="content-product-h3">Ruffled Suspender Jeans</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">28</span> &#36;
+                                </div>
+                                <button type="button" class="btn btn-cart">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4">
+                <div class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd" src="/css/image/girl/Soft Feel Ribbed Culottes.jpg">
+                    </div>
+                    <div class="content-product">
+                        <p class="view" id="quick-view3">Quick view</p>
+                        <h3 class="content-product-h3">Soft Feel Ribbed Culottes</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">29</span> &#36;
+                            </div>
+                            <button type="button" class="btn btn-cart">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4">
+                <div class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd" src="/css/image/girl/Baby Girls' Pants.jpg">
+                    </div>
+                    <div class="content-product">
+                        <p class="view" id="quick-view4">Quick view</p>
+                        <h3 class="content-product-h3">Baby Girls' Pants</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">20</span> &#36;
+                            </div>
+                            <button type="button" class="btn btn-cart">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer style="margin-top:80%;">
+        <div class="footer1">
+            <div class="col span-2-of-5 border">
+                <ul>
+                    <li><a class="p-content link" href="#">Home</a></li>
+                    <li><a class="p-content link" href="#">Shop Collection</a></li>
+                    <li><a class="p-content link" href="#">Our Story</a></li>
+                    <li><a class="p-content link" href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col span-1-of-5">
+                <h4>happy kids</h4>
+                <div class="icon">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col span-2-of-5 border">
+                <ul>
+                    <li><a class="p-content link" href="#">Shipping & Returns</a></li>
+                    <li><a class="p-content link" href="#">Store Policy</a></li>
+                    <li><a class="p-content link" href="#">Payment Methods</a></li>
+                    <li><a class="p-content link" href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="footer2">
+            <form>
+                <p class="p-content">
+                    Join Our Mailing List
+                </p>
+                <input class="input-home" type="email" placeholder="Enter your email here*">
+                <button type="email" class="button-black">Subscribe Now</button>
+            </form>
+        </div>
+        <div class="footer3">
+            <p>
+                © 2023 by happy kids. Proudly created with <a href="#">Wix.com</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -14,9 +14,8 @@
     <script src="https://kit.fontawesome.com/b22c8e6bd8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/ventors/css/grid.css">
-    <script type="text/javascript" src="/script.js"></script>
+    <script type="text/javascript" src="/slideshow.js"></script>
     <script type="text/javascript" src="/main.js" defer></script>
-    <script type="text/javascript" src="/login.js" defer></script>
 
     <title>Kids Clothing Store</title>
     </script>
@@ -40,10 +39,20 @@
                 <ul>
                     <li ><i class="fas fa-user-circle"><a href="login.html"> Login</a></i></li>
                     <li><a class="link" href="index.html">Home</a></li>
-                    <li class="dropdown"><a class="link" href="#">Shop Collection</a>
+                    <li class="dropdown"><a class="link" href="#">Girl</a>
                         <div class="dropdown-content">
-                            <a href="girl.html">Girl</a>
-                            <a href="boy.html">Boy</a>
+                            <a href="/shirtgirl.html">Shirt</a>
+                            <a href="/pantgirl.html">Pant</a>
+                            <a href="/dress.html">Dress</a>
+                            <a href="/shoegirl.html">Shoes</a>
+                        </div>
+                    </li>
+                    <li class="dropdown"><a class="link" href="#">Boy</a>
+                        <div class="dropdown-content">
+                            <a href="/shirtboy.html">Shirt</a>
+                            <a href="/pantboy.html">Pant</a>
+                            <a href="/jacket.html">Jacket</a>
+                            <a href="/shoeboy.html">Shoes</a>                     
                         </div>
                     </li>
                     <li><a class="link" href="ourstory.html">Our Story</a></li>
@@ -125,7 +134,7 @@
 
     <section>
         <div class="featured">
-            <h4>Weekly Featured Products</h4>
+            <h4 class="heading-primary">Weekly Featured Products</h4>
 
             <div class="products">
                 <div class="col span-1-of-4">
@@ -665,11 +674,12 @@
         </div>
         <div class="footer2">
             <form>
+                
                 <p class="p-content">
                     Join Our Mailing List
                 </p>
-                <input class="input-home" type="email" placeholder="Enter your email here*">
-                <a href="#" class="button-black">Subscribe Now</a>
+                <input class="input-home" type="email" placeholder="Enter your email here*" required>
+                <button type="email" class="button-black">Subscribe Now</button>
             </form>
         </div>
         <div class="footer3">
